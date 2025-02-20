@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Autour+One&family=Fira+Code:wght@300&family=Heebo&family=Inter:wght@300&family=JetBrains+Mono:wght@300&family=Manrope:wght@400;500;600;700;800&family=Open+Sans:wght@400;700&family=Work+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/0f56553570.js" crossorigin="anonymous"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .font-manrope {
+        font-family: "Manrope", sans-serif;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body class="font-manrope bg-slate-100 sm:bg-slate-300 md:bg-slate-400 lg:bg-slate-600 xl:bg-slate-700 2xl:bg-slate-900">
+    <header class="container mx-auto">
+      <div class="hero">
+        <div class="hero-content flex-col lg:flex-row">
+          <div>
+            <h1 class="text-7xl font-extrabold">
+              It's good<br />
+              tea time at The<br />Tea House
+            </h1>
+            <p class="py-6">
+              Tea and Botanical Solutions Supplier Give Optimum Satisfaction To
+              Your Taste Buds.
+            </p>
+            <button class="btn btn-primary">Explore More</button>
+        </div>
+        <div>
+          <img
+            src="images/banner.png"
+            class="max-w-sm"
+          />
+          <div class=" -mt-20 flex items-center gap-4 drop-shadow-lg bg-white p-5 w-60"> 
+              <i class="fa-solid fa-star text-3xl text-amber-400"></i>
+              <div>
+                  <h3 class="text-3xl">5.00</h3>
+                  <p>Trust Pilot Ratings</p>
+              </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </header>
+    <main class="container mx-auto">
+
+    </main>
+    <footer></footer>
+  </body>
+</html>

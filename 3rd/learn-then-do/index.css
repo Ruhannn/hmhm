@@ -1,0 +1,217 @@
+:root {
+  /* light theme */
+  --backgroung-color: #f3f1e7;
+  --foreground-color: #000000;
+
+  /* steps */
+  --step-width: 20rem;
+  --step-height: 4rem;
+
+  /* animation */
+  --animation-duration: 5s;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* dark theme */
+    --backgroung-color: #000000;
+    --foreground-color: #f3f1e7;
+  }
+}
+/* ==============================
+  reset
+============================== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+/* ==============================
+   basic
+============================== */
+html {
+  background-color: var(--backgroung-color);
+  color: var(--foreground-color);
+}
+
+/* occupies entire viewport */
+.wrapper {
+  min-width: 100%;
+  min-height: 100dvh;
+  display: flex;
+}
+
+/* center content and set perspective */
+.container {
+  min-width: 660px;
+  min-height: 450px;
+  margin: auto;
+  position: relative;
+  perspective: 100rem;
+  perspective-origin: -100% -100%;
+}
+/* ==============================
+   animation
+============================== */
+@keyframes top {
+  0% {
+    top: 0;
+  }
+
+  25%,
+  50% {
+    top: -100%;
+  }
+
+  75%,
+  100% {
+    top: 0;
+  }
+}
+
+@keyframes bottom {
+  0% {
+    top: 100%;
+  }
+
+  25%,
+  50% {
+    top: 0;
+  }
+
+  75%,
+  100% {
+    top: 100%;
+  }
+}
+
+/* ==============================
+   steps
+============================== */
+
+.step,
+.step__text-wrapper,
+.step__top-text,
+.step__bottom-text {
+  position: absolute;
+  width: var(--step-width);
+  height: var(--step-height);
+}
+
+.step {
+  transform-style: preserve-3d;
+  transform-origin: top right;
+  transform: rotateY(20deg);
+}
+
+.step__text-wrapper {
+  font-family: sans-serif;
+  font-size: var(--step-height);
+  font-weight: bold;
+  text-transform: uppercase;
+  overflow: hidden;
+  transform-origin: top center;
+}
+
+.step__top-text,
+.step__bottom-text {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation-duration: var(--animation-duration);
+  animation-iteration-count: infinite;
+}
+
+.step__top-text {
+  animation-name: top;
+}
+
+.step__bottom-text {
+  animation-name: bottom;
+}
+
+/* modifiers */
+.step--vertical .step__top-text,
+.step--horizontal .step__bottom-text {
+  letter-spacing: 1rem;
+  text-indent: 0.7rem;
+}
+
+/* ==============================
+   position
+============================== */
+
+/* step 1, vertical */
+.step:nth-child(1) {
+  top: calc(var(--step-height) * 0);
+}
+
+.step:nth-child(1) .step__text-wrapper {
+  transform: translateZ(calc(var(--step-height) * 0));
+}
+
+/* step 2, horizontal */
+.step:nth-child(2) {
+  top: calc(var(--step-height) * 1);
+}
+
+.step:nth-child(2) .step__text-wrapper {
+  transform: rotateX(90deg) translateY(calc(var(--step-height) * 0));
+}
+
+/* step 3, vertical */
+.step:nth-child(3) {
+  top: calc(var(--step-height) * 1);
+}
+
+.step:nth-child(3) .step__text-wrapper {
+  transform: translateZ(calc(var(--step-height) * 1));
+}
+
+/* step 4, horizontal */
+.step:nth-child(4) {
+  top: calc(var(--step-height) * 2);
+}
+
+.step:nth-child(4) .step__text-wrapper {
+  transform: rotateX(90deg) translateY(calc(var(--step-height) * 1));
+}
+
+/* step 5, vertical */
+.step:nth-child(5) {
+  top: calc(var(--step-height) * 2);
+}
+
+.step:nth-child(5) .step__text-wrapper {
+  transform: translateZ(calc(var(--step-height) * 2));
+}
+
+/* step 6, horizontal */
+.step:nth-child(6) {
+  top: calc(var(--step-height) * 3);
+}
+
+.step:nth-child(6) .step__text-wrapper {
+  transform: rotateX(90deg) translateY(calc(var(--step-height) * 2));
+}
+
+/* step 7, vertical */
+.step:nth-child(7) {
+  top: calc(var(--step-height) * 3);
+}
+
+.step:nth-child(7) .step__text-wrapper {
+  transform: translateZ(calc(var(--step-height) * 3));
+}
+
+/* step 8, horizontal */
+.step:nth-child(8) {
+  top: calc(var(--step-height) * 4);
+}
+
+.step:nth-child(8) .step__text-wrapper {
+  transform: rotateX(90deg) translateY(calc(var(--step-height) * 3));
+}
