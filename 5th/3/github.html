@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Styled Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100 h-screen flex justify-center items-center">
+    <div class="max-w-md mx-auto p-6 bg-white rounded-lg shadow-lg">
+      <h1 id="secret-info" class="text-3xl font-semibold mb-4 text-center">
+        🔒 My Secret Info
+      </h1>
+      <input
+        id="cap"
+        type="text"
+        class="w-full px-4 py-2 border rounded-lg mb-4 focus:outline-none focus:ring focus:border-blue-300"
+        placeholder="Type 'uwu' to unlock"
+      />
+      <button
+        id="btn-delete"
+        class="bg-red-500 text-white px-4 py-2 rounded-lg w-full focus:outline-none hover:bg-red-600"
+        disabled
+      >
+        Delete
+      </button>
+    </div>
+<button
+onclick="">
+  
+</button>
+    <script>
+      const inputElement = document.getElementById("cap");
+      const deleteButton = document.getElementById("btn-delete");
+
+      inputElement.addEventListener("input", function (event) {
+        const text = event.target.value;
+
+        if (text.trim().toLowerCase() === "uwu") {
+          deleteButton.removeAttribute("disabled");
+        } else {
+          deleteButton.setAttribute("disabled", true);
+        }
+      });
+      deleteButton.addEventListener("click", function () {
+        const secret = document.getElementById("secret-info");
+        secret.style.display = "none";
+      });
+    </script>
+  </body>
+</html>

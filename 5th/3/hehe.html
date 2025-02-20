@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+       
+        #text-f {
+          background-color: #ffffff; 
+        }
+      </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hehe Counter</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+  <div class="max-w-md p-6 bg-white rounded-lg shadow-lg">
+    <h1 class="text-2xl font-bold mb-4">Hehe Counter</h1>
+    <p class="mb-2">Type "hehe" in the input field to see the count:</p>
+    <input id="text-f" type="text" class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300">
+    <p id="main-heading" class="mt-4 text-lg font-semibold"></p>
+  </div>
+  <script>
+    let heheCount = 0;
+    document.getElementById("text-f").addEventListener("input", function() {
+      const inputValue = this.value.toLowerCase();
+      if (inputValue.includes("hehe")) {
+        heheCount++;
+        document.getElementById("main-heading").innerText = `hehe count: ${heheCount}`;
+        this.value = "";
+      }
+    });
+  </script>
+</body>
+</html>
