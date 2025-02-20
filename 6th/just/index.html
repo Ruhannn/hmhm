@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hehe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&family=Work+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet" />
+    <style>
+      :root {
+        --dark: rgb(20, 20, 20);
+        --yellow: rgb(253, 216, 53);
+        --blue: rgb(98, 0, 234);
+
+        --c1: rgb(3, 7, 18);
+        --c2: rgb(163, 230, 53);
+
+        --left-color: var(--c1);
+        --right-color: var(--c2);
+      }
+
+      body {
+        background-color: var(--dark);
+        margin: 0px;
+      }
+
+      .side {
+        display: grid;
+        height: 100vh;
+        overflow: hidden;
+        place-items: center;
+        position: absolute;
+        width: 100%;
+      }
+
+      .side .title {
+        font-family: "Montserrat", sans-serif;
+        font-size: 7vw;
+        font-weight: 800;
+        margin: 0px 10vw;
+        width: 80vw;
+      }
+
+      .side .fancy {
+        font-family: "Permanent Marker", cursive;
+        font-size: 1.8em;
+        line-height: 0.6em;
+      }
+
+      #left-side {
+        background-color: var(--left-color);
+        width: 60%;
+        z-index: 2;
+      }
+
+      #left-side .title {
+        color: white;
+      }
+
+      #left-side .fancy {
+        color: var(--right-color);
+      }
+
+      #right-side {
+        background-color: var(--right-color);
+      }
+
+      #right-side .title {
+        color: var(--dark);
+      }
+
+      #right-side .fancy {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="left-side" class="side">
+      <h2 class="title">
+        Sometimes a simple header is
+        <span class="fancy">better</span>
+      </h2>
+    </div>
+    <div id="right-side" class="side">
+      <h2 class="title">
+        Sometimes a simple header is
+        <span class="fancy">worse</span>
+      </h2>
+    </div>
+  </body>
+  <script>
+    const left = document.getElementById("left-side");
+    const handleMove = (e) => {
+      left.style.width = `${(e.clientX / window.innerWidth) * 100}%`;
+      // console.log(`${(e.clientX / window.innerWidth) * 100}%`);
+    };
+    document.onmousemove = (e) => handleMove(e);
+    document.ontouchmove = (e) => handleMove(e.touches[0]);
+  </script>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hunting Phone</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.6.2/dist/full.css"
+      rel="stylesheet"
+      type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header class="text-center py-12">
+      <h2 class="text-5xl text-blue-600 font-semibold">Hunting Phone</h2>
+    </header>
+    <main class="container mx-auto">
+      <!-- Search Section -->
+      <section class="mb-10">
+        <div class="flex justify-center space-x-2">
+          <input
+            id="search-field"
+            type="text"
+            placeholder="Search here"
+            class="input input-bordered w-full max-w-xs" />
+          <button onclick="handleSearch()" class="btn btn-active btn-neutral">
+            Search
+          </button>
+        </div>
+        <div class="flex justify-center mt-2 space-x-2">
+          <input
+            id="search-field2"
+            type="text"
+            placeholder="Search here"
+            class="input input-bordered w-full max-w-xs" />
+          <button onclick="handleSearch2()" class="btn btn-active btn-neutral">
+            Search
+          </button>
+        </div>
+      </section>
+
+      <!-- Spinner Section -->
+      <div class="text-center my-10 hidden" id="spinner">
+        <span class="loading loading-dots loading-md"></span>
+      </div>
+
+      <!-- Show All Button Section -->
+      <div id="showAllContainer" class="text-center my-6">
+        <button class="btn btn-accent">Show All</button>
+      </div>
+
+      <!-- Data Section -->
+      <section>
+        <div
+          id="phone-container"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+      </section>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
+<style></style>

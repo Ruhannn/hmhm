@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <style>
+    @keyframes wave {
+      from,
+      to {
+        transform: translate(-50%, 0%);
+      }
+
+      50% {
+        transform: translate(-50%, -20%);
+      }
+    }
+
+    body,
+    footer {
+      background-color: rgb(10, 10, 10) !important;
+      margin: 0px;
+    }
+
+    #bubble-wrapper {
+      height: 100%;
+      width: 100%;
+
+      position: fixed;
+      bottom: 0px;
+
+      overflow: hidden;
+      pointer-events: none;
+    }
+
+    .bubble {
+      height: max(300px, 30vw);
+      width: max(300px, 30vw);
+
+      background-color: rgb(33, 150, 243);
+      border-radius: 100%;
+
+      position: absolute;
+      left: 50%;
+      top: 100%;
+
+      animation: wave 2s ease-in-out infinite;
+    }
+
+    @media (prefers-reduced-motion) {
+      .bubble {
+        animation: none;
+        display: none;
+      }
+    }
+
+    h3,
+    a {
+      font-family: "Rubik", sans-serif;
+      font-weight: 400;
+      margin: 0px;
+    }
+
+    #footer {
+      border-top: 1px solid rgba(255, 255, 255, 0.25);
+      bottom: 0px;
+      position: absolute;
+      width: 100%;
+    }
+
+    #footer-content {
+      padding: 8rem 16rem;
+      display: flex;
+      justify-content: space-around;
+      gap: 1rem;
+    }
+
+    .footer-section {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .footer-section-title {
+      color: white;
+      font-size: 1.5rem;
+    }
+
+    .footer-section-links {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      width: 160px;
+    }
+
+    .footer-section-links > a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .footer-section-links > a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 900px) {
+      #footer-content {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 4rem;
+      }
+
+      .footer-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .footer-section-title {
+        flex-shrink: 0;
+        width: 120px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      #footer {
+        position: relative;
+        margin-top: 90vh;
+      }
+
+      #footer-content {
+        padding: 2rem;
+      }
+
+      .footer-section-title {
+        font-size: 1rem;
+      }
+
+      .footer-section-links > a {
+        font-size: 0.8rem;
+      }
+    }
+    #cursor {
+  position: fixed;
+  top: -5px;
+  left: -5px;
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 999;
+}
+
+#cursor-border {
+  --size: 50px;
+  position: fixed;
+  top: calc(var(--size) / -2);
+  left: calc(var(--size) / -2);
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px white;
+  pointer-events: none;
+  transition: top 0.15s ease-out, left 0.15s ease-out, width 0.15s ease-out,
+    height 0.15s ease-out, background-color 0.15s ease-out;
+  z-index: 999;
+}
+
+
+  </style>
+  <body class="flex flex-col min-h-screen">
+    <div id="cursor"></div>
+<div id="cursor-border"></div>
+    <main class="flex-grow">
+      <div class="container mx-auto p-8">
+        <h1 class="text-2xl font-bold mb-4 text-white">Welcome to U</h1>
+        <p class="text-white">
+            In a sacred land, where sakura petals away,
+            Stands Ayaka, a graceful sight on display.
+            Her hair styled in two braids, adorned so sweet,
+            With white flowers, like a heavenly treat.
+        </p>
+        <img
+          src="https://cdn.discordapp.com/attachments/1125391624973852792/1143392569842225162/m8TLth4.png"
+          alt="Example Image"
+          class="mt-4 rounded-md shadow-md"
+        />
+      </div>
+    </main>
+    <div id="bubble-wrapper">
+  
+    </div><div id="bubble-wrapper">
+      
+    </div>
+    <footer
+      class="footer py-20 footer-center p-10 bg-base-200 text-base-content rounded text-white"
+    >
+      <div class="grid grid-flow-col gap-4">
+        <a class="link link-hover">About us</a>
+        <a class="link link-hover">Contact</a>
+        <a class="link link-hover">Jobs</a>
+        <a class="link link-hover">Press kit</a>
+      </div>
+      <div class="grid grid-flow-col gap-4">
+        <a
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            class="fill-current"
+          >
+            <path
+              d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
+            ></path>
+          </svg>
+        </a>
+        <a>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            class="fill-current"
+          >
+            <path
+              d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"
+            ></path>
+          </svg>
+        </a>
+        <a>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            class="fill-current"
+          >
+            <path
+              d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"
+            ></path>
+          </svg>
+        </a>
+      </div>
+
+      <div>
+      </div>
+    </footer>
+
+    <script>
+        const cursor = document.querySelector("#cursor");
+const cursorBorder = document.querySelector("#cursor-border");
+const cursorPos = { x: 0, y: 0 };
+const cursorBorderPos = { x: 0, y: 0 };
+
+document.addEventListener("mousemove", (e) => {
+  cursorPos.x = e.clientX;
+  cursorPos.y = e.clientY;
+
+  cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+});
+
+requestAnimationFrame(function loop() {
+  const easting = 8;
+  cursorBorderPos.x += (cursorPos.x - cursorBorderPos.x) / easting;
+  cursorBorderPos.y += (cursorPos.y - cursorBorderPos.y) / easting;
+
+  cursorBorder.style.transform = `translate(${cursorBorderPos.x}px, ${cursorBorderPos.y}px)`;
+  requestAnimationFrame(loop);
+});
+
+document.querySelectorAll("[data-cursor]").forEach((item) => {
+  item.addEventListener("mouseover", (e) => {
+    if (item.dataset.cursor === "pointer") {
+      cursorBorder.style.backgroundColor = "rgba(255, 255, 255, .6)";
+      cursorBorder.style.setProperty("--size", "30px");
+    }
+    if (item.dataset.cursor === "pointer2") {
+      cursorBorder.style.backgroundColor = "white";
+      cursorBorder.style.mixBlendMode = "difference";
+      cursorBorder.style.setProperty("--size", "80px");
+    }
+  });
+  item.addEventListener("mouseout", (e) => {
+    cursorBorder.style.backgroundColor = "unset";
+    cursorBorder.style.mixBlendMode = "unset";
+    cursorBorder.style.setProperty("--size", "50px");
+  });
+});
+
+      const wrapper = document.getElementById("bubble-wrapper");
+      const animateBubble = (x) => {
+        const bubble = document.createElement("div");
+        bubble.className = "bubble";
+        bubble.style.left = `${x}px`;
+        wrapper.appendChild(bubble);
+        setTimeout(() => wrapper.removeChild(bubble), 2000);
+      };
+      window.onmousemove = (e) => animateBubble(e.clientX);
+    </script>
+  </body>
+</html>
