@@ -1,0 +1,228 @@
+* {
+  font-family: "Work Sans", sans-serif;
+  margin: 0;
+}
+.full1 {
+  height: 100vh;
+  background-image: url(images/banner/banner3.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.title1 {
+  color: #fff;
+  text-align: right;
+  font-size: 65px;
+  font-weight: 700;
+  font-weight: bold;
+}
+.para1 {
+  padding-top: 10px;
+  color: #fff;
+  text-align: right;
+  font-size: 16px;
+  font-weight: 400;
+}
+.item {
+  padding-top: 216px;
+  padding-right: 230px;
+  align-items: center;
+
+}
+.btn1 {
+  margin-top: 10px;
+  border-radius: 5px;
+  background: #fff;
+  border: none;
+  color: #005FAC;
+  padding: 21px;
+  font-size: 20px;
+  font-family: Work Sans;
+  transition: all 0.2s;
+}
+.btn1:hover{
+  background:transparent;
+  border: #fff 2px solid;
+  color: #fff;
+}
+.full2{
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 100px;
+  padding: 50px;
+  justify-content: space-between;
+  
+
+}
+.tyt{
+  text-align: right;
+}
+.title2{
+  color: #151414;
+font-family: Work Sans;
+font-size: 40px;
+font-weight: 700;
+font-weight: bold;
+}
+.para2{
+  margin-top: 24px;
+  color: #444343;
+font-size: 16px;
+width: 300px;
+}
+/* <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+  <path d="M20 6L9 17L4 12" stroke="#16D887" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg> */
+.item1 ul{
+ margin-top:40px ;
+  gap: 10px;
+  list-style: none;
+}
+.item1 ul li{
+  margin-top: 10px;
+}
+
+.plan{
+  color: #151414;
+text-align: center;
+font-size: 40px;
+font-weight: 700;
+
+}
+
+.plan-container {
+  display: flex;
+  justify-content: center;
+  padding:50px; 
+}
+
+.plan-t0 {
+
+  padding:50px;
+  display: flex;
+  justify-content: center;
+}
+.plan3{
+
+ align-items: center;
+ padding: 40px;
+ text-align: center;
+ gap: 10px;
+}
+.plan3:hover{
+  background: #d6e0ff;
+  transform: translateY(-5px);
+  border-radius: 7px;
+
+
+
+}
+.watch{
+border-radius: 8px;
+
+}
+.ru{
+  
+  background-image: url(images/gradient1.png) , url(images/watch.png);
+   width: 1140px; 
+   height: 300px;
+   margin: 0 auto;
+
+
+
+}
+.ru {
+  position: relative;
+  margin-bottom: 150px;
+}
+
+.watch {
+  width: 1140px;
+  height: 300px;
+
+}
+
+.ru h1 {
+
+margin-left: 20px;
+padding-top: 10px;
+  color: white;
+  font-weight: bold; 
+ text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+font-size: 40px;
+margin-bottom: 10px;
+
+}
+
+.ru .btn1 {
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  cursor: pointer;
+  margin-top: 60px;
+  transition: all 0.2s;
+}
+footer{
+background-color: #151414;
+display: flex;
+justify-content: space-between;
+padding: 50px;
+
+
+}
+
+.title4{
+  color: #F8F8F8;
+  font-size: 45px;
+  margin: 10px;
+}
+.paga4{
+  color: #FFF;
+font-size: 16px;
+}
+.yy{
+  color: #FFF;
+font-size: 16px;
+margin: 10px;
+
+}
+.gg{
+
+ justify-content: space-between;
+
+}
+.paga4{
+  margin: 10px;
+}
+.hhh h1{
+  color: #FFF;
+font-size: 25px;
+}
+.hhh input{
+width: 325px;
+height: 64px;
+border: 2px solid white;
+border-radius: 10px;
+background: transparent;
+}
+svg{
+margin-top: 10px;
+padding-top: 10px;
+}
+.btn2{
+  border: none;
+  border-radius: 6px;
+  background-color: #058cfb;
+  padding: 15px;
+  color: #FFF;
+}
+
+.btn2:hover{
+  border: #F8F8F8 2px solid;
+  background: transparent;
+  transition:all 0.2s;
+  border-radius: 6px;
+}
+
+
+

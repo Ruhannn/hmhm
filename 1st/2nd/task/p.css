@@ -1,0 +1,43 @@
+*{
+
+     color: #7aa2f7;
+}
+
+
+body{
+
+background-image: url(https://cdn.discordapp.com/attachments/1065689957525630997/1124661834838982766/eSEibA4.jpg);
+
+background-attachment: fixed;
+
+background-repeat: no-repeat;
+
+background-position: center; 
+
+background-size: cover;
+
+
+    background-color: #414868;
+
+}
+.s1{
+
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-size: 30px;
+text-align: center;
+margin-top: 20px;
+
+border-top: 20px solid ;
+border-radius: 20px;
+}
+#miq1{
+
+text-decoration: overline;
+
+}
+
+div.miq2{
+
+    border: solid #414868 30px;
+    text-align: center;
+}

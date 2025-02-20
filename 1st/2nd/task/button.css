@@ -1,0 +1,35 @@
+img{
+
+    margin: 50px 50px 50px 50px;
+    
+    padding: 50px 50px 50px 50px;
+}
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    color: dodgerblue;
+    padding: 50px 50px 50px 50px;
+
+}
+
+p{
+
+color: cornflowerblue;
+
+
+
+}
+
+button{
+
+    border: 20px solid white;
+    border-radius: 25px;
+}
+body{
+    background-color: #000;
+}
+
+img{
+display: inline-flex;
+display: inline;
+display: inline;
+}

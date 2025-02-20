@@ -1,0 +1,20 @@
+#img1{
+
+    float: left;
+    margin: 10px;
+}
+#img2{
+
+    float: right;
+    margin: 10px;
+}
+.ayaka{
+    border: 5px solid;
+display: flow-root;
+}
+
+.newdiv{
+
+border: 3px solid;
+height: 76px;
+}

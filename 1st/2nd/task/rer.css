@@ -1,0 +1,41 @@
+.fgdf{
+display: inline;
+font-size: 30px;
+font-family: monospace;
+border: 15px;
+color: cornflowerblue;
+border-radius: 24px;
+margin: 10px;
+padding: 40px;
+padding-top: 50px;
+}
+
+h1{
+
+color: #884388;
+text-align: center;
+font-size: 30px;
+font-family: sans-serif;
+font-style: italic;
+
+}
+    body{
+    
+    background-color: aliceblue;
+    
+    background-attachment: fixed;
+    
+    background-repeat: no-repeat;
+    
+    background-position: center; 
+    
+    background-size: cover;
+    
+    }
+
+    .C{
+        display: flex;
+    }
+    .A,b{
+        margin: o;
+    }

@@ -1,0 +1,56 @@
+
+
+.blog{
+background: transparent;
+color: #fbfbfb;
+    font-size: 40px;
+border: 20px solid #2ac3de;
+border-radius: 20px;    
+/* border-top: 20px solid  ; */
+margin: 10px;
+margin-top: 50px;
+text-align: justify;
+padding: 20px;
+box-shadow: #0d2d32 10px 10px 10px;
+}
+*{
+    margin: 0;
+}
+.sdf{
+    border:  2px solid rgb(124, 58, 124);
+    /* display:block; */
+    margin: 20px;
+    padding: 10px;
+    display: inline-block;
+}
+.wel{
+font-family: 'Courier New', Courier, monospace;
+ 
+
+
+}
+
+p{
+color: blue;
+    background: transparent;
+}
+
+    body{
+    
+    background-image: url(https://live.staticflickr.com/65535/53005579012_338c3f4bdb_o.jpg);
+    
+    background-attachment: fixed;
+    
+    background-repeat: no-repeat;
+    
+    background-position: center; 
+    
+    background-size: cover;
+    
+    }
+
+
+h3{
+    color: #2ac3de;
+}
+

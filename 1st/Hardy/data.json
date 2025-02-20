@@ -1,0 +1,67 @@
+{
+  "courses": [
+    {
+      "name": "Introduction to C Programming",
+      "description": "Learn C programming basics: variables, loops, functions. Build a strong foundation for programming.",
+      "image": "https://i.ibb.co/THhfpNP/Rectangle-2-2.png",
+      "price": 15000,
+      "credit": 1
+    },
+    {
+      "name": "Introduction to Algorithms",
+      "description": "Explore fundamental computer science algorithms. Gain problem-solving skills for real-world challenges.",
+      "image": "https://i.ibb.co/TDXfcyN/Rectangle-2-3.png",
+      "price": 25000,
+      "credit": 2
+    },
+    {
+      "name": "Introduction to C++ for DSA",
+      "description": "Master C++ for data structures and algorithms. Code efficient solutions for complex problems.",
+      "image": "https://i.ibb.co/3kST5Qk/Rectangle-2-4.png",
+      "price": 10000,
+      "credit": 10
+    },
+    {
+      "name": "Basic Data Structures",
+      "description": "Learn arrays, linked lists, and stacks. Acquire essential data structure skills for software development.",
+      "image": "https://i.ibb.co/mHMWXs4/Rectangle-3.png",
+      "price": 35000,
+      "credit": 5
+    },
+    {
+      "name": "Introduction to OOP Python",
+      "description": "Discover Python's object-oriented principles. Create reusable code with classes and objects.",
+      "image": "https://i.ibb.co/XYFj6SQ/Rectangle-2.png",
+      "price": 19000,
+      "credit": 5
+    },
+    {
+      "name": "Software Engineering",
+      "description": "Best practices in software development and project management. Deliver high-quality projects efficiently.",
+      "image": "https://i.ibb.co/f94qQ9K/Rectangle-2-5.png",
+      "price": 23000,
+      "credit": 2
+    },
+    {
+      "name": "AWS and Cloud Computing",
+      "description": "Explore Amazon Web Services and cloud computing. Deploy scalable solutions for modern applications.",
+      "image": "https://i.ibb.co/0MFmNTb/Rectangle-3-1.png",
+      "price": 35000,
+      "credit": 5
+    },
+    {
+      "name": "Database (MySQL)",
+      "description": "Master MySQL for efficient database management and querying. Store and retrieve data effectively.",
+      "image": "https://i.ibb.co/mSmCKch/Rectangle-2-1.png",
+      "price": 19000,
+      "credit": 5
+    },
+    {
+      "name": "Problem-Solving Part",
+      "description": "Enhance problem-solving skills through coding challenges and exercises. Tackle real coding problems.",
+      "image": "https://i.ibb.co/98RNpgp/Rectangle-2-6.png",
+      "price": 23000,
+      "credit": 2
+    }
+  ]
+}
