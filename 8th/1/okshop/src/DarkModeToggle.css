@@ -1,0 +1,27 @@
+.dark-mode-container {
+    position: relative;
+    width: 50px;
+    height: 25px;
+    background-color: #ddd;
+    border-radius: 25px;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  
+  .dark-mode {
+    background-color: #333;
+  }
+  
+  .toggle-circle {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: #fff; /* Circle color */
+    border-radius: 50%;
+    transition: transform 0.5s ease;
+  }
+  
+  .toggle-circle.expanded {
+    transform: scale(40); /* Expand the circle to cover the screen */
+  }
+  

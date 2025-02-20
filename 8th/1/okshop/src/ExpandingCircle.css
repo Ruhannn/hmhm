@@ -1,0 +1,14 @@
+.expanding-circle {
+    position: fixed;
+    width: 25px;
+    height: 25px;
+    background-color: #fff; /* Circle color */
+    border-radius: 50%;
+    transition: transform 0.5s ease;
+    z-index: 999; /* Ensure it's above other elements */
+  }
+  
+  .expanding-circle.expanded {
+    transform: scale(40); /* Expand the circle to cover the screen */
+  }
+  
