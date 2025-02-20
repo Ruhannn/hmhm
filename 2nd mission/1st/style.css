@@ -1,0 +1,39 @@
+nav a{
+    text-decoration: none;
+    color: black;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+.log-in{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    margin: auto;
+    
+}
+.log-in input{
+
+    margin-top: 20px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+.item{
+    border: 2px solid tomato;
+}
+.yyy {
+display: grid;
+/* grid-template-columns: 200px 200px 200px 200px; */
+ grid-template-columns: repeat(2, 200px) 200px 150px;
+
+
+  }
+
+  .item {
+    box-shadow: 0 0 10px 5px #bf00ff;
+    margin-bottom: 5px;
+  }

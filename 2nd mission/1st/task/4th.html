@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: aquamarine;
+      }
+      .games-box{
+        /* width: 40%;
+        height: 400px; */
+        position: absolute;
+        /* top: 50%;
+        left: 50%; */
+        transform: translate(-50%,-50%);
+        box-shadow: 0 10px 20px rgb(40, 40, 40);
+      }
+      .games-box img{
+        height: 100%;
+        width: 100%;
+      }
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  background: black;
+  cursor: pointer;
+  border: 2px white solid;
+}
+.overly-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.games-box:hover .overlay {
+  opacity: 0.8;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="games-box">
+      <img
+        src="https://cdn.discordapp.com/attachments/1065689957525630997/1131064885715947570/Picsart_23-07-19_09-27-48-251.jpg"
+        alt=""
+      />
+      <div class="overlay">
+        <div class="overly-content">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="48"
+            height="48"
+            viewBox="0 0 48 48"
+            fill="none"
+          >
+            <g clip-path="url(#clip0_62_379)">
+              <path
+                d="M24 0C10.7656 0 0 10.7666 0 24C0 37.2334 10.7656 48 24 48C37.2344 48 48 37.2334 48 24C48 10.7666 37.2344 0 24 0ZM33.541 24.8408L19.5411 33.8408C19.377 33.9473 19.1875 34 19 34C18.836 34 18.6699 33.959 18.5215 33.878C18.1992 33.7022 18 33.3662 18 33V15C18 14.6338 18.1992 14.2978 18.5215 14.122C18.8379 13.9482 19.2344 13.9589 19.5411 14.1592L33.541 23.1592C33.8262 23.3427 34 23.6602 34 24C34 24.3398 33.8262 24.6572 33.541 24.8408Z"
+                fill="white"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_62_379">
+                <rect width="48" height="48" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+          <h3>watch now</h3>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

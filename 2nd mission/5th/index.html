@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin-left: 50px;
+    }
+    .container, .inner{
+        width: 300px;
+        height: 300px;
+    }
+    .container{
+        border: 2px solid blueviolet;
+        background-color: aquamarine;
+    }
+    .inner{
+        border: 2px solid rgb(106, 235, 0);
+        background-color: rgb(217, 255, 0);
+        /* transform: scale(.75 , 0.5); */
+        /* transform: rotate(45deg); */
+        /* transform: scale(0.5);
+        rotate: rotate(50deg); */  
+    }
+    .inner:hover{
+        transform: rotate(36deg) scale(1.25);
+        transition: all 2s;
+    }
+</style>
+<body>
+    <h2>among sus</h2>
+    <div class="container">
+        <div class="inner">inner1</div>
+    </div>
+    <div class="container">
+        <div class="inner">inner2</div>
+    </div>
+    <div class="container">
+        <div class="inner">inner3</div>
+    </div>
+</body>
+</html>

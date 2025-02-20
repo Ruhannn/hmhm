@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+  </head>
+  <body class="bg-sky-200">
+    <header>
+      <nav>
+        <div class="dropdown dropdown-hover">
+          <label tabindex="0" class="btn m-1">Hover</label>
+          <ul
+            tabindex="0"
+            class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
+          >
+            <li><a>Item 1</a></li>
+            <li><a>Item 2</a></li>
+          </ul>
+        </div>
+        <div class="dropdown dropdown-bottom">
+          <label tabindex="0" class="btn m-1">Click</label>
+          <ul
+            tabindex="0"
+            class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
+          >
+            <li><a href="https://daisyui.com/docs/themes/">Item 1</a></li>
+            <li><a>Item 2</a></li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <label tabindex="0" class="btn m-1">Click</label>
+          <div
+            tabindex="0"
+            class="bg-sky-400 dropdown-content z-[1] card card-compact w-64 p-2 shadow bg-primary text-primary-content"
+          >
+            <div class="card-body">
+              <h3 class="card-title">yoo</h3>
+              <p>this is ez</p>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="flex">
+        <h1 class="ml-96">gggg</h1>
+        <div class="dropdown dropdown-end">
+          <label tabindex="0" class="btn btn-circle btn-ghost btn-xs text-info">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              class="w-4 h-4 stroke-current"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              ></path>
+            </svg>
+          </label>
+          <div
+            tabindex="0"
+            class="card compact dropdown-content z-[1] shadow bg-base-100 rounded-box w-64"
+          >
+            <div class="items-center-center card-body">
+              <h2 class="card-title">hghghhhghhg</h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatibus ea sunt iusto eum commodi molestiae sapiente natus,
+                omnis nostrum aliquid aperiam autem sint minima ad eveniet minus
+                modi quasi accusantium?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Open the modal using ID.showModal() method -->
+      <button class="btn" onclick="my_modal_1.showModal()">open modal</button>
+      <dialog id="my_modal_1" class="modal">
+        <form method="dialog" class="modal-box">
+          <h3 class="font-bold text-lg">Hello!</h3>
+          <p class="py-4">Press ESC key or click the button below to close</p>
+          <div class="modal-action">
+            <!-- if there is a button in form, it will close the modal -->
+            <button class="btn">Close</button>
+          </div>
+        </form>
+      </dialog>
+    </header>
+    <main>
+      <div class="navbar bg-base-300 rounded-box">
+        <div class="flex-1 px-2 lg:flex-none">
+          <a class="text-lg font-bold">ruhan</a>
+        </div>
+        <div class="flex justify-end flex-1 px-2">
+          <div class="flex items-stretch">
+            <a class="btn btn-ghost rounded-btn">Log in</a>
+            <div class="dropdown dropdown-end">
+              <label tabindex="0" class="btn btn-ghost rounded-btn">more</label>
+              <ul
+                tabindex="0"
+                class="menu dropdown-content z-[1] p-2 shadow bg-base-100 rounded-box w-52 mt-4"
+              >
+                <li><a>Item 1</a></li>
+                <li><a>Item 2</a></li>
+                <li><a>Item 1</a></li>
+                <li><a>Item 2</a></li>
+                <li><a>Item 1</a></li>
+                <li><a>Item 2</a></li>
+                <li><a>Item 1</a></li>
+                <li><a>Item 2</a></li>
+                <li><a>Item 1</a></li>
+                <li><a>Item 2</a></li>
+                <li><a>Item 1</a></li>
+                <li><a>Item 2</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <label class="swap">
+        <!-- this hidden checkbox controls the state -->
+        <input type="checkbox" />
+
+        <!-- volume on icon -->
+        <svg
+          class="swap-on fill-current"
+          xmlns="http://www.w3.org/2000/svg"
+          width="48"
+          height="48"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M14,3.23V5.29C16.89,6.15 19,8.83 19,12C19,15.17 16.89,17.84 14,18.7V20.77C18,19.86 21,16.28 21,12C21,7.72 18,4.14 14,3.23M16.5,12C16.5,10.23 15.5,8.71 14,7.97V16C15.5,15.29 16.5,13.76 16.5,12M3,9V15H7L12,20V4L7,9H3Z"
+          />
+        </svg>
+
+        <!-- volume off icon -->
+        <svg
+          class="swap-off fill-current"
+          xmlns="http://www.w3.org/2000/svg"
+          width="48"
+          height="48"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M3,9H7L12,4V20L7,15H3V9M16.59,12L14,9.41L15.41,8L18,10.59L20.59,8L22,9.41L19.41,12L22,14.59L20.59,16L18,13.41L15.41,16L14,14.59L16.59,12Z"
+          />
+        </svg>
+      </label>
+      <label class="swap swap-flip text-9xl">
+        <!-- this hidden checkbox controls the state -->
+        <input type="checkbox" />
+
+        <img
+          width="400px"
+          src="https://cdn.discordapp.com/attachments/1065689957525630997/1124668817650487426/106789005_p0.jpg"
+          class="swap-on"
+        />
+        <img
+          width="400px"
+          src="https://cdn.discordapp.com/attachments/1065689957525630997/1124667991280341022/jRnT1Fr.png"
+          class="swap-off"
+        />
+      </label>
+    </footer>
+
+    <div class="alert shadow-lg">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="stroke-info shrink-0 w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+      <div>
+        <h3 class="font-bold">New message!</h3>
+        <div class="text-xs">You have 1 unread message</div>
+      </div>
+      <button class="btn btn-sm">See</button>
+    </div>
+<!-- coo -->
+<div class="alert mt-40 mb-40">
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="stroke-info shrink-0 w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+  <span>we use cookies for no reason.</span>
+  <div>
+    <button class="btn btn-sm">Deny</button>
+    <button class="btn btn-sm btn-primary">Accept</button>
+  </div>
+</div>
+  </body>
+<div class="m-96">
+  <div class="avatar-group -space-x-6">
+    <div class="avatar">
+      <div class="w-12">
+        <img src="https://cdn.discordapp.com/attachments/1065689957525630997/1131760258830831826/mLf9R5d.gif" />
+      </div>
+    </div>
+    <div class="avatar">
+      <div class="w-12">
+        <img src="https://cdn.discordapp.com/attachments/1065689957525630997/1131763330328047706/aZKs1Pm.gif" />
+      </div>
+    </div>
+    <div class="avatar">
+      <div class="w-12">
+        <img src="https://cdn.discordapp.com/attachments/1065689957525630997/1131914148192722994/XPc4VxO.gif" />
+      </div>
+    </div>
+    <div class="avatar placeholder">
+      <div class="w-12 bg-neutral-focus text-neutral-content">
+        <span>+99</span>
+      </div>
+    </div>
+  </div>
+</div>
+<button class="btn">
+  Inbox
+  <div class="badge">+99</div>
+</button>
+<button class="btn">
+  Inbox
+  <div class="badge badge-secondary">+99</div>
+</button>
+<div class="flex items-center justify-center mb-20">
+<div class="card card-compact w-96 bg-base-100 shadow-xl ">
+  <figure><img src="https://cdn.discordapp.com/attachments/1065689957525630997/1128373966470402089/IMG_20230711_231344.jpg" alt="Shoes" /></figure>
+  <div class="card-body">
+    <h2 class="card-title">Ramen</h2>
+    <p>If a dog chews shoes whose shoes does he choose?</p>
+    <div class="card-actions justify-end">
+      <button class="btn btn-primary">Buy Now</button>
+    </div>
+  </div>
+</div>
+</div>
+<div class="chat chat-start">
+  <div class="chat-image avatar">
+    <div class="w-10 rounded-full">
+      <img src="https://cdn.discordapp.com/attachments/1065689957525630997/1131914148192722994/XPc4VxO.gif" />
+    </div>
+  </div>
+  <div class="chat-header">
+    Obi-Wan Kenobi
+    <time class="text-xs opacity-50">12:45</time>
+  </div>
+  <div class="chat-bubble bg-white">You were the Chosen One!</div>
+  <div class="chat-footer opacity-50">
+    Delivered
+  </div>
+</div>
+<div class="chat chat-end">
+  <div class="chat-image avatar">
+    <div class="w-10 rounded-full">
+      <img src="https://cdn.discordapp.com/attachments/1065689957525630997/1131763330328047706/aZKs1Pm.gif" />
+    </div>
+  </div>
+  <div class="chat-header">
+    Anakin
+    <time class="text-xs opacity-50">12:46</time>
+  </div>
+  <div class="chat-bubble bg-slate-200">I hate you!</div>
+  <div class="chat-footer opacity-50">
+    Seen at 12:46
+  </div>
+</div>
+<div class=" flex items-center justify-center">
+<div class="carousel w-4/5">
+  <div id="slide1" class="carousel-item relative w-full">
+    <img src="https://cdn.discordapp.com/attachments/1065689957525630997/1124674225672835072/KZELUi6.jpg" class="w-full" />
+    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+      <a href="#slide4" class="btn btn-circle">❮</a> 
+      <a href="#slide2" class="btn btn-circle">❯</a>
+    </div>
+  </div> 
+  <div id="slide2" class="carousel-item relative w-full">
+    <img src="https://cdn.discordapp.com/attachments/1065689957525630997/1124673772708966491/z1wFPFT.jpg" class="w-full" />
+    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+      <a href="#slide1" class="btn btn-circle">❮</a> 
+      <a href="#slide3" class="btn btn-circle">❯</a>
+    </div>
+  </div> 
+  <div id="slide3" class="carousel-item relative w-full">
+    <img src="https://cdn.discordapp.com/attachments/1065689957525630997/1124669657924767834/105974809_p0.png" class="w-full" />
+    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+      <a href="#slide2" class="btn btn-circle">❮</a> 
+      <a href="#slide4" class="btn btn-circle">❯</a>
+    </div>
+  </div> 
+  <div id="slide4" class="carousel-item relative w-full">
+    <img src="https://cdn.discordapp.com/attachments/1065689957525630997/1124661834838982766/eSEibA4.jpg" class="w-full" />
+    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+      <a href="#slide3" class="btn btn-circle">❮</a> 
+      <a href="#slide1" class="btn btn-circle">❯</a>
+    </div>
+  </div>
+</div>
+</div>
+</html>
+
