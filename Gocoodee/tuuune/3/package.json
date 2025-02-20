@@ -1,0 +1,17 @@
+{
+  "name": "kamip3",
+  "version": "1.0.0",
+  "description": "just a mp3 downloader for youtube",
+  "main": "index.js",
+  "dependencies": {
+    "fluent-ffmpeg": "^2.1.2",
+    "progress": "^2.0.3",
+    "readline": "^1.3.0",
+    "ytdl-core": "^4.11.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ruhan Rouf",
+  "license": "ISC"
+}
